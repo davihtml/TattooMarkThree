@@ -1,0 +1,130 @@
+
+.Idea {
+    position: relative;
+}
+
+.ConteinerDivIdea {
+    min-height: 100vh;
+    background-image: url(img/bg1.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 40px;
+    padding: 40px;
+}
+
+/* IMAGEM */
+.TattooImg {
+    border-radius: 30px;
+    width: 100%;
+    max-width: 550px;
+}
+
+/* LOGO */
+.LogoImg {
+    width: 100px;
+    position: relative;
+    z-index: 10;
+    transform: translate(60px, -420px);
+}
+
+/* TEXTO */
+.IdeaDivRight {
+    margin-right: 70px;
+    max-width: 500px;
+}
+
+.IdeaDivRight h1 {
+    font-family: "Anton SC", sans-serif;
+    color: white;
+    font-size: 5em;
+    font-weight: 400;
+    line-height: 90px;
+}
+
+.IdeaDivRight span {
+    color: var(--vermelho);
+}
+
+.IdeaDivRight h3 {
+    font-size: 25px;
+    font-family: "Nunito Sans", sans-serif;
+    color: var(--vermelho);
+    font-style: italic;
+    font-weight: 200;
+}
+
+.IdeaDivRight p {
+    font-family: "Nunito Sans", sans-serif;
+    color: white;
+    font-style: italic;
+    margin-top: 20px;
+}
+
+/* ========================= */
+/* 📱 TABLET (até 1024px) */
+/* ========================= */
+@media (max-width: 1024px) {
+    .ConteinerDivIdea {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .IdeaDivRight {
+        margin-right: 0;
+    }
+
+    .IdeaDivRight h1 {
+        font-size: 3.5em;
+        line-height: 70px;
+    }
+
+    .LogoImg {
+        transform: none;
+        margin-bottom: 20px;
+    }
+}
+
+/* ========================= */
+/* 📱 MOBILE (até 768px) */
+/* ========================= */
+@media (max-width: 768px) {
+    .ConteinerDivIdea {
+        padding: 20px;
+    }
+
+    .IdeaDivRight h1 {
+        font-size: 2.5em;
+        line-height: 50px;
+    }
+
+    .IdeaDivRight h3 {
+        font-size: 18px;
+    }
+
+    .IdeaDivRight p {
+        font-size: 14px;
+    }
+
+    .TattooImg {
+        max-width: 100%;
+    }
+
+    .LogoImg {
+        width: 80px;
+    }
+}
+
+/* ========================= */
+/* 📱 MOBILE PEQUENO (até 480px) */
+/* ========================= */
+@media (max-width: 480px) {
+    .IdeaDivRight h1 {
+        font-size: 2em;
+        line-height: 40px;
+    }
+}

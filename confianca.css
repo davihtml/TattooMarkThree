@@ -1,0 +1,106 @@
+.Confianca {
+    position: relative;
+    min-height: 100vh;
+    background-image: url(img/bg1.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 20px;
+}
+
+/* CONTAINER CENTRAL */
+.CConteinerAll {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    max-width: 1000px;
+    width: 100%;
+}
+
+/* LOGO/IMG PEQUENA */
+.ImgTattooDIv {
+    width: 80px;
+    margin-bottom: 20px;
+}
+
+/* TITULO */
+.DivTitleC h1 {
+    color: var(--vermelho);
+    font-family: "Anton SC", sans-serif;
+    font-size: clamp(2rem, 5vw, 60px);
+}
+
+/* TEXTO */
+.DivTitleC p {
+    color: white;
+    font-family: "Nunito Sans", sans-serif;
+    font-style: italic;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    max-width: 600px;
+}
+
+.DivTitleC span {
+    color: white;
+}
+
+/* IMAGENS */
+.ImgsDivC {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+
+    padding: 20px;
+    border: 1px solid var(--vermelho);
+    border-radius: 20px;
+    width: 100%;
+}
+
+/* IMAGENS INDIVIDUAIS */
+.ImgsDivC img {
+    width: 100%;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.ImgsDivC img:hover {
+    transform: translateY(-10px) scale(1.03);
+}
+
+/* ========================= */
+/* 📱 TABLET */
+/* ========================= */
+@media (max-width: 1024px) {
+    .ImgsDivC {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* ========================= */
+/* 📱 MOBILE */
+/* ========================= */
+@media (max-width: 768px) {
+    .ImgsDivC {
+        grid-template-columns: 1fr;
+    }
+
+    .DivTitleC p {
+        font-size: 14px;
+    }
+}
+
+/* ========================= */
+/* 📱 MOBILE PEQUENO */
+/* ========================= */
+@media (max-width: 480px) {
+    .DivTitleC h1 {
+        font-size: 1.8rem;
+    }
+}
